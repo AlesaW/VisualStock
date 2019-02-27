@@ -1,9 +1,8 @@
-//
-//  Find_points.cpp
-//  
-//
-//  Created by Alesa on 2/11/19.
-//
+//  create_vertex.cpp
+//  "create_vertex" takes the merge matrix (n-1 by 2) and a row number (counting from 1) i.
+//  "create_vertex" find all points belong to the vertex containing points in row i and all related (points in row smaller than i and merged with points in row i).
+//  "create_vertex returns" two vectors: rows_checked (during this points search process) and points_contained (in this vertex).
+//  "create_vertex_pre" is the function does real calculation: updating  the vectors rows_checked and points_contained from a default initialized vectors.
 
 #include <Rcpp.h>
 using namespace Rcpp;
